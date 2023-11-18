@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho Function</title>
+  </head>
+  <body style="background-color: #666;">
+    <script>
+      const valor1 = Number(prompt("Digite o primeiro valor:"));
+      const operacao = prompt("Que tipo de operação matemática deseja realizar?");
+      const valor2 = Number(prompt("Digte o segundo valor:"));
+
+      switch (operacao != '' || operacao != undefined) {
+        
+        case operacao === "+":
+          alert(
+            `A soma entre ${valor1} e ${valor2} é igual a ${soma(valor1, valor2)}`
+          );
+          break;
+        case operacao === "-":
+          alert(
+            `A subtração entre ${valor1} e ${valor2} é igual a ${sub(valor1, valor2)}`
+          );
+          break;
+        case operacao === "*" || operacao === "x":
+          alert(
+            `A multiplicação entre ${valor1} e ${valor2} é igual a ${multi(valor1, valor2)}`
+          );
+          break;
+        case operacao === "/":
+          alert(
+            `A divisão entre ${valor1} e ${valor2} é igual a ${div(valor1, valor2)}`
+          );
+
+          break;
+
+        default:
+          valError();
+          break;
+      }
+
+      function soma(x, y) {
+        return x + y;
+      }
+
+      function sub(x, y) {
+        return x - y;
+      }
+
+      function multi(x, y) {
+        return x * y;
+      }
+
+      function div(x, y) {
+        return x / y;
+      }
+
+      function valError() {
+        alert("Valor incorreto!");
+      }
+
+    </script>
+  </body>
+</html>
