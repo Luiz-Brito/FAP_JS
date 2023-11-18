@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho 5</title>
+  </head>
+  <body>
+    <script>
+      let valor1 = Number(prompt("Digite o primeiro valor:"));
+      let operacao = prompt("Que tipo de operação matemática deseja realizar?");
+      let valor2 = Number(prompt("Digte o segundo valor:"));
+
+      switch (valor1 > 0 && valor2 > 0) {
+        case operacao == "+":
+          console.log(
+            `A soma entre ${valor1} e ${valor2} é igual a ${valor1 + valor2}`
+          );
+          break;
+        case operacao == "-":
+          console.log(
+            `A subtração entre ${valor1} e ${valor2} é igual a ${
+              valor1 - valor2
+            }`
+          );
+          break;
+        case operacao == "*" || operacao == "x":
+          console.log(
+            `A multiplicação entre ${valor1} e ${valor2} é igual a ${
+              valor1 * valor2
+            }`
+          );
+          break;
+        case operacao == "/":
+          console.log(
+            `A divisão entre ${valor1} e ${valor2} é igual a ${valor1 / valor2}`
+          );
+          console.log(`Resto = ${valor1 % valor2}`);
+
+          break;
+
+        default:
+          console.log("Valor incorreto!");
+          break;
+      }
+    </script>
+  </body>
+</html>
