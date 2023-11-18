@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Object</title>
+</head>
+<body style="background-color: #666;">
+    
+    <script>
+        function Banco(conta, saldo, tipo, ag) {
+            this.conta = conta;
+            this.saldo = saldo;
+            this.tipo = tipo;
+            this.ag = ag;
+
+            this.buscaSaldo = () => {
+                return this.saldo;
+            }
+
+            this.depositar = (valor) => {
+                return this.saldo += valor;
+            }
+
+            this.sacar = (valor) => {
+                return this.saldo -= valor;
+            }
+        }
+
+
+        const contaLuiz = new Banco("2424", 0, "Conta Corrente", "001");
+
+        console.log(contaLuiz.buscaSaldo());
+        console.log(contaLuiz.depositar(1700));
+        console.log(contaLuiz.sacar(600));
+
+
+    </script>
+</body>
+</html>
