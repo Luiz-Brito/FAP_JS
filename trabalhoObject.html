@@ -14,15 +14,15 @@
             this.tipo = tipo;
             this.ag = ag;
 
-            this.buscaSaldo = () => {
+            this.buscaSaldo = function(){
                 return this.saldo;
             }
 
-            this.depositar = (valor) => {
+            this.depositar = function(valor){
                 return this.saldo += valor;
             }
 
-            this.sacar = (valor) => {
+            this.sacar = function(valor){
                 return this.saldo -= valor;
             }
         }
