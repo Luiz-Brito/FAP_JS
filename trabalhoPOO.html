@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho POO</title>
+</head>
+<body style="background-color: #666;">
+    
+    <script>
+
+        const Livro = function(nome, escritor, paginas) {
+            gNome = nome,
+            gEscritor = escritor,
+            gPaginas = paginas
+
+            this.getNome = function() {
+                return gNome;
+            }
+
+            this.getEscritor = function() {
+                return gEscritor;
+            }
+
+            this.getPaginas = function() {
+                return gPaginas;
+            }
+
+        }
+
+        const livro1 = new Livro("A Hora da Estrela", "Clarice Lispector", 88);
+
+        console.log(livro1.getNome());
+        console.log(livro1.getEscritor());
+        console.log(livro1.getPaginas());
+
+        const Cachorro = function(nome, raca, idade) {
+            gNome = nome,
+            gRaca = raca,
+            gIdade = idade
+
+            this.getNome = function() {
+                return gNome;
+            }
+
+            this.getRaca = function() {
+                return gRaca;
+            }
+
+            this.getIdade = function() {
+                return gIdade;
+            }
+        }
+
+        const cachorro1 = new Cachorro("Wally", "Doberman", 5);
+
+        console.log(cachorro1.getNome());
+        console.log(cachorro1.getRaca());
+        console.log(cachorro1.getIdade());
+
+    </script>
+</body>
+</html>
